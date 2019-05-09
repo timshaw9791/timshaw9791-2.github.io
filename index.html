@@ -8,9 +8,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $("#test").text("test!!!!!!");
-$.post("http://115.159.154.194/warehouse/graphql"
-,'{"query":"{\n\n  \n  RoleList{\n    content{\n      id\n      roleEnum\n    }\n  }\n}\n\n","variables":null,"operationName":null}'
-,function(data){
+$.getJSON("https://mytest.com/test.json",function(data){
     window.alert(data);
 },"json")
 </script>
